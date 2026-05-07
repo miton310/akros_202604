@@ -37,7 +37,7 @@ $menu_args = array(
       <!-- footer -->
       <ul class="p-drawer__footer">
         <li class="p-drawer__footer-list">
-          <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svg/icon-reserve.svg" alt="予約">
+          <a href="https://akrosminamiazabu.hacomono.jp/home" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svg/icon-reserve.svg" alt="予約">
             予約
           </a>
         </li>

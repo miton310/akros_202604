@@ -37,7 +37,7 @@ $is_active_footer2 = is_active_sidebar('footer-2');
 
     <div class="l-footer__foot">
       <div class="l-footer__btnWrap">
-        <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/" class="c-button" target="_blank">WEB予約</a>
+        <a href="https://akrosminamiazabu.hacomono.jp/home" class="c-button" target="_blank">WEB予約</a>
         <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="c-button">お問い合わせ</a>
       </div>
 
@@ -78,14 +78,14 @@ $is_active_footer2 = is_active_sidebar('footer-2');
 
       <!-- fixed button -->
       <ul class="c-fixedButton">
-        <li class="c-fixedButton__item"><a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/" target="_blank">予約はこちら</a></li>
+        <li class="c-fixedButton__item"><a href="https://akrosminamiazabu.hacomono.jp/home" target="_blank">予約はこちら</a></li>
         <!-- <li class="c-fixedButton__item"><a href="<?php echo esc_url(home_url('/')); ?>trial">体験レッスン</a></li> -->
         <li class="c-fixedButton__item">
           <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/?trial=true" target="_blank">体験レッスン</a>
         </li>
       </ul>
       <div class="c-fixedButton--pc" style="top: 140px;">
-        <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/" class="c-fixedButton--pc-link" target="_blank">予約はこちら</a>
+        <a href="https://akrosminamiazabu.hacomono.jp/home" class="c-fixedButton--pc-link" target="_blank">予約はこちら</a>
       </div>
 
     </div>
