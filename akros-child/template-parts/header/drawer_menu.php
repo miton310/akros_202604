@@ -36,7 +36,11 @@ $menu_args = array(
 
       <!-- footer -->
       <ul class="p-drawer__footer">
-        <li class="p-drawer__footer-list"><a href="<?php echo esc_url(home_url('/')); ?>#reserve"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svg/icon-reserve.svg" alt="予約">予約</a></li>
+        <li class="p-drawer__footer-list">
+          <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svg/icon-reserve.svg" alt="予約">
+            予約
+          </a>
+        </li>
         <li class="p-drawer__footer-list"><a href="<?php echo esc_url(home_url('/')); ?>about#access"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svg/icon-map.svg" alt="アクセス">アクセス</a></li>
         <li class="p-drawer__footer-list"><a href="tel:0344008711"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/svg/icon-phone.svg" alt="電話">電話</a></li>
       </ul>

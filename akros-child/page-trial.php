@@ -24,7 +24,7 @@ while (have_posts()) :
     <div class="p-flow">
       <?php
       $flows = [
-        ["1", "体験レッスンお申込み", "ページ下部の専用フォームまたはお電話にてご希望のクラスの体験レッスンをお申し込み下さい。Instagramのダイレクトメールからでも大丈夫です!", "001"],
+        ["1", "トライアル予約を申し込む", "ページ下部の専用フォームまたはお電話にてご希望のクラスの体験レッスンをお申し込み下さい。Instagramのダイレクトメールからでも大丈夫です!", "001"],
         ["2", "ご来館", "スタジオにお越し頂きます。<br>その際、簡単な説明や準備などを行います。", "002"],
         ["3", "体験レッスンに参加", "先生と一緒にストレッチを全部やり通します。<br>次に、マット運動を体験します。", "003"],
         ["4", "ご入会の検討", "入会をご希望の方は入会手続きをさせて頂きます。!", "004"]
@@ -47,22 +47,33 @@ while (have_posts()) :
     </div>
 
 
-    <p class="c-button-apply__text c-button__text text-center p-color-paleGreen">まずはお気軽に<br class="u-br_sm">体験レッスンをご予約ください</p>
+    <p class="c-button-apply__text c-button__text text-center p-color-paleGreen">まずはお気軽に<br class="u-br_sm">トライアル予約をお申し込みください</p>
 
     <!-- 予約フォーム -->
     <div id="reserve" class="p-front-reserve l-container--wide bg-light-gray">
       <div class="p-front-reserve__box l-inner-box bg-white">
         <h2 class="c-title--lv2 --reserve">RESERVE</h2>
         <!-- <p class="text-center u-mb32">カレンダーから予約できます。<span class="u-inline">予約したい日付けを</span><span class="u-inline">クリックしてお進みください。</span></p> -->
-        <!-- 予約 -->
-        <div class="c-booking-package__wrap">
-          <iframe type="text/html" frameborder="0" width="100%" height="1000px" src="//airrsv.net/akrosminamiazabu/calendar/embed/"></iframe>
-        </div>
 
-        <div class="c-title-bar">キャンセルポリシー</div>
+        <!-- 予約 -->
+        <!-- <p class="text-center u-mb32">
+          <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/?trial=true" target="_blank" class="c-button">
+             トライアル予約を申し込む
+          </a>
+        </p> -->
+
+        <iframe id="hacomono-fixed-widget-w0001" src="https://akrosminamiazabu.hacomono.jp/widgets/1?isShowProgramName=true&studioId=1"></iframe>
+        <script src="https://akrosminamiazabu.hacomono.jp/js/widget.js"></script>
+
+        <!-- 旧 -->
+        <!-- <div class="c-booking-package__wrap">
+          <iframe type="text/html" frameborder="0" width="100%" height="1000px" src="//airrsv.net/akrosminamiazabu/calendar/embed/"></iframe>
+        </div> -->
+
+        <!-- <div class="c-title-bar">キャンセルポリシー</div>
         <p class="u-lh2">ご予約のキャンセルや変更は営業時間内（21時まで）に店舗へご予約の際のメール、メッセージ、または電話でご連絡ください。<br>
           前々日（21時）までのキャンセルは料金はかかりません。<br>
-          前日・当日キャンセルともに、レッスン料の100%をいただきます。</p>
+          前日・当日キャンセルともに、レッスン料の100%をいただきます。</p> -->
       </div>
     </div>
   </main>

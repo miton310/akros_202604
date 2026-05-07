@@ -2,6 +2,7 @@
 node_modules
 webp
 *.old
+update.txt
 
 # OS files
 .DS_Store

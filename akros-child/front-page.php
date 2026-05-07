@@ -47,7 +47,7 @@ get_header(); ?>
         <div class="p-front-hero__line --right"></div>
         <div class="p-front-hero__line --left"></div>
         <div class="p-front-hero__trial-button">
-          <a href="<?php echo esc_url(home_url('/')); ?>trial/" class="p-front-hero__trial-link"><span>TRIAL<br>LESSON</span>まずは<br>体験レッスン</a>
+          <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/?trial=true" target="_blank" class="p-front-hero__trial-link"><span>TRIAL<br>LESSON</span>まずは<br>体験レッスン</a>
         </div>
 
       </section>
@@ -168,16 +168,21 @@ get_header(); ?>
     <div id="reserve" class="p-front-reserve l-container--wide bg-light-gray">
       <div class="p-front-reserve__box l-inner-box bg-white">
         <h2 class="c-title--lv2 --reserve">RESERVE</h2>
-        <!-- <p class="text-center u-mb32">カレンダーから予約できます。<span class="u-inline">予約したい日付けをクリックしてお進みください。</span></p> -->
+        <!-- <p class="text-center u-mb32">ご予約はこちらから<span class="u-inline">予約したい日付けをクリックしてお進みください。</span></p> -->
         <!-- 予約 -->
-        <div class="c-booking-package__wrap">
+         <p class="text-center u-mb32">
+            <a href="https://akrosminamiazabu.hacomono.jp/reserve/schedule/1/2/" target="_blank" class="c-button">
+             ご予約はこちらから
+            </a>
+         </p>
+        <!-- <div class="c-booking-package__wrap">
           <iframe type="text/html" frameborder="0" width="100%" height="1000px" src="//airrsv.net/akrosminamiazabu/calendar/embed/"></iframe>
-        </div>
+        </div> -->
 
-        <div class="c-title-bar">キャンセルポリシー</div>
+        <!-- <div class="c-title-bar">キャンセルポリシー</div>
         <p class="u-lh2">ご予約のキャンセルや変更は営業時間内（21時まで）に店舗へご予約の際のメール、メッセージ、または電話でご連絡ください。<br>
           前々日（21時）までのキャンセルは料金はかかりません。<br>
-          前日・当日キャンセルともに、レッスン料の100%をいただきます。</p>
+          前日・当日キャンセルともに、レッスン料の100%をいただきます。</p> -->
       </div>
     </div>
   </div>
