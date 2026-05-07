@@ -1,0 +1,107 @@
+@use "../foundation/variable" as *;
+
+.p-instructor {
+  @include mq() {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.333% - (min(50px, 4vw)) / 1.5));
+    column-gap: min(50px, 4vw);
+
+    .l-container--wide {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__wrap {}
+
+  &__figure {
+    padding: 2.5rem 10vw 0 10vw;
+
+    @include mq() {
+      padding-top: 0;
+    }
+  }
+
+  &__content {
+    padding: 0 10vw 0 10vw;
+
+    @include mq() {
+      padding: 0;
+
+      .l-container--wide {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__head {
+    padding: 2rem 1rem;
+    margin-bottom: 1.25rem;
+
+    @include mq() {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 500;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    span {
+      font-size: 0.875rem;
+      display: block;
+      font-weight: normal;
+      letter-spacing: 0.7px;
+    }
+  }
+
+  &__list {
+    padding-left: 0;
+    font-size: 0.75rem;
+
+    &.--grid {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(2, auto);
+      grid-auto-flow: column;
+
+      @media screen and (min-width: 851px) and (max-width: 1024px) {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 851px) and (max-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &__footer {
+    margin-bottom: 5rem;
+
+    >* {
+      font-size: 0.75rem;
+      @include height(12, 22);
+    }
+  }
+
+  &__footer-list {
+    padding-left: 0;
+    margin-bottom: 1.25rem;
+
+    li {
+      margin-bottom: 0.25rem;
+    }
+  }
+}

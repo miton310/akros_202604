@@ -1,0 +1,152 @@
+@use "../foundation/variable" as *;
+
+.p-trial-top {
+  padding: 2.5rem 6vw;
+
+  &__fig {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 470px;
+
+    @include mq() {
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.p-flow {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__wrap {
+    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+
+    @include mq() {
+      padding-bottom: 6rem;
+    }
+
+    &:not(:last-child) {
+      border-left: 1px solid #176C64;
+    }
+
+    &:not(:last-child):before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 3px;
+      left: -6.5px;
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg) skew(10deg, 10deg);
+      border-bottom: 1px solid #176C64;
+      border-right: 1px solid #176C64;
+    }
+  }
+
+  &__box {
+    padding: 2rem 1.5rem;
+    position: relative;
+
+    figure {
+      margin-bottom: 0;
+    }
+
+    @include mq() {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:before {
+      font-weight: bold;
+      // background: #3db95b;
+      position: absolute;
+      top: -14px;
+      left: -2.25rem;
+      color: #fff;
+      padding: 0.125rem 0.7rem;
+      line-height: 28px;
+      width: 90px;
+      background-image: url(../../images/icon/arrow.png);
+      background-size: contain;
+
+      @include mq() {
+        left: -4rem;
+      }
+    }
+
+    &.step1 {
+      &:before {
+        content: "STEP.1";
+      }
+    }
+
+    &.step2 {
+      &:before {
+        content: "STEP.2";
+      }
+    }
+
+    &.step3 {
+      &:before {
+        content: "STEP.3";
+      }
+    }
+
+    &.step4 {
+      &:before {
+        content: "STEP.4";
+      }
+    }
+
+  }
+
+  &__def {
+    @include mq() {
+      width: calc(728px - 6rem - 250px);
+    }
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #3ca198;
+    letter-spacing: 0.9px;
+    margin-bottom: 0.25rem;
+  }
+
+  &__desc {
+    font-size: 0.75rem;
+    line-height: 1.75;
+    margin-bottom: 0.5rem;
+
+    @include mq() {
+      height: 63px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    @include mq() {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 290px;
+    }
+  }
+}
+
+.p-trial-reverse-text {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #3ca198;
+  text-align: center;
+}

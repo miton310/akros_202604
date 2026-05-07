@@ -1,0 +1,1 @@
+{"version":3,"sources":["project/contact.scss"],"names":[],"mappings":"AAEI,wBACE,aAAA,CACA,cAAA,CACA,eAAA,CACA,aAAA","file":"../../project/contact.css","sourcesContent":[".p-contact {\r\n  &__footer {\r\n    span {\r\n      color: #3db95b;\r\n      font-size: 22px;\r\n      font-weight: 700;\r\n      display: block;\r\n    }\r\n  }\r\n}"]}

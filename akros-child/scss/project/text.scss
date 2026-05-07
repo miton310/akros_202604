@@ -1,0 +1,52 @@
+@use "../foundation/variable" as *;
+
+// 16px -> 20px
+.p-text-bold-20 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: $pale-green;
+
+  @include mq() {
+    font-size: 1.25rem;
+  }
+}
+
+.p-color-paleGreen {
+  color: $pale-green;
+}
+
+.p-color-lightGreen {
+  color: $light-green;
+}
+
+.p-text {
+  font-size: 0.875rem;
+  @include height(14, 24);
+  letter-spacing: 0.7px;
+
+  @include mq() {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    @include height(18, 38);
+  }
+}
+
+.p-text-small {
+  font-size: 0.75rem;
+  @include height(12, 22);
+}
+
+.p-text-pageTop {
+  font-size: 0.875rem;
+  @include height(14, 24);
+}
+
+.p-text-pageCaution {
+  font-size: 0.875rem;
+  @include height(14, 24);
+}
+
+.p-text-14 {
+  font-size: 0.875rem;
+  @include height(14, 26);
+}

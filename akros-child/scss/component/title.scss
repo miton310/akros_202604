@@ -1,0 +1,193 @@
+@use '../foundation/variable' as *;
+
+.c-title {
+  &--lv2 {
+    font-weight: 900;
+    color: $light-green;
+    letter-spacing: 4.8px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    &:before {
+      display: block;
+      content: "";
+      width: 32px;
+      height: 32px;
+      margin: auto;
+    }
+
+    &:after {
+      display: block;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 1.6px;
+
+      @include mq() {
+        letter-spacing: 0;
+        font-size: 1.375rem;
+      }
+    }
+
+    &.--access {
+      position: relative;
+      margin-top: 3.5rem;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        background-image: url(../../images/svg/icon-map-g.svg);
+        background-size: contain;
+        background-position: center center;
+        width: 30px;
+        height: 40px;
+        top: -30px;
+        @include center(x);
+      }
+
+      &:after {
+        content: "アクセスについて";
+      }
+    }
+
+    &.--information {
+      color: #fff;
+
+      &:before {
+        background-image: url(../../images/svg/icon-info.svg);
+      }
+
+      &:after {
+        content: "お知らせ";
+      }
+    }
+
+    &.--instructor {
+      &:before {
+        background-image: url(../../images/svg/icon-instructor.svg);
+      }
+
+      &:after {
+        content: "指導者";
+      }
+    }
+
+    &.--reserve {
+      &:before {
+        background-image: url('../../images/svg/icon-reserve-g.svg');
+      }
+
+      &:after {
+        content: "予約";
+      }
+    }
+
+    &.--ig {
+      color: #fff;
+
+      &:before {
+        background-image: url('../../images/svg/icon-ig.svg');
+      }
+    }
+  }
+
+  &--lv3 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+
+    @include mq() {
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.c-pageTitle__main {
+  font-size: 18px;
+  letter-spacing: 3.6px;
+
+  @include mq() {
+    font-size: 26px;
+    letter-spacing: 5.2px;
+  }
+
+  &:after {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+
+    @include mq() {
+      font-size: 18px;
+    }
+  }
+
+  // ページタイトル
+  .page-id-24 & {
+    &:after {
+      content: "子供クラス";
+    }
+  }
+
+  .page-id-16 & {
+    &:after {
+      content: "大人クラス";
+    }
+  }
+
+  .page-id-22 & {
+    &:after {
+      content: "指導者";
+    }
+  }
+
+  .page-id-27 & {
+    &:after {
+      content: "体験レッスン";
+    }
+  }
+
+  .page-id-14 & {
+    &:after {
+      content: "アクロス南麻布の詳細";
+    }
+  }
+
+  .page-id-20 & {
+    &:after {
+      content: "お問い合わせ";
+    }
+  }
+
+  .page-id-18 & {
+    &:after {
+      content: "注意事項";
+    }
+  }
+}
+
+.c-title-bar {
+  background: transparent linear-gradient(90deg, #41A9A0 0%, #004B43 97%) 0% 0% no-repeat padding-box;
+  // height: clamp(44px, 8.8vw, 48px);
+  // line-height: clamp(44px, 8.8vw, 48px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.c-headline {
+  font-size: 1rem;
+  color: $main-color;
+  text-align: center;
+  margin-bottom: 0.75rem;
+
+  @include mq() {
+    font-size: 1.25rem;
+  }
+}

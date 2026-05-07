@@ -1,0 +1,91 @@
+/*======================================
+  || color
+======================================*/
+$text-color: #373737;
+$main-color: #3DB95B;
+
+$gray: #373737;
+$light-gray: #E6E6E6;
+
+$light-green: #3DB95B;
+$pale-green: #3CA198;
+$dark-green: #004B43;
+
+$pink: #F14870;
+
+$pale-yellow: #F3EFE5;
+
+/* ==============================
+  || 設定
+============================== */
+:root {
+  --ark-width--container: 1000px;
+}
+
+/* ==============================
+  || breakpoints
+============================== */
+$breakpoints: (
+  'xs': 'screen and (max-width: 374px)',
+  'sm': 'screen and (min-width: 400px)',
+  'md': 'screen and (min-width: 850px)',
+  'lg': 'screen and (min-width: 1000px)',
+  'xl': 'screen and (min-width: 1200px)',
+  ) !default;
+
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/* ==============================
+  中央寄せ
+============================== */
+@mixin center($direction) {
+  position: absolute;
+
+  @if $direction==xy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%
+    );
+}
+
+@else if $direction==x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@else if $direction==y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+}
+
+@mixin l_spacing($spacing) {
+  letter-spacing: ($spacing / 1000) + em;
+}
+
+@mixin height($fz, $high) {
+  line-height: calc($high / $fz);
+}
+
+@mixin del-space($line-height) {
+
+  &::before,
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+  }
+
+  &::before {
+    margin-top: calc((1 - #{$line-height}) * .5em);
+  }
+
+  &::after {
+    margin-bottom: calc((1 - #{$line-height}) * .5em);
+  }
+}

@@ -1,0 +1,41 @@
+@use '../foundation/variable' as *;
+
+.c-gnav {
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 0.25rem;
+
+  .__mainText {
+    border-bottom: 1px solid #FFF;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    padding-bottom: 0.25rem;
+  }
+
+  .__subText {
+    opacity: 1;
+    position: relative;
+    top: 4px;
+  }
+}
+
+.c-gnav__li.-current,
+.c-gnav__li.focus,
+.c-gnav__li:hover {
+  color: #FFF;
+  background: transparent linear-gradient(180deg, #41A9A0 0%, #004B43 97%) 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+}
+
+.c-gnav__li,
+.c-gnav__li>.c-gnav__a {
+  height: 55px;
+  max-width: 135px;
+  width: 15vw;
+}
+
+.c-gnav__li>.c-gnav__a {
+  padding: 16px 0;
+}

@@ -1,0 +1,622 @@
+@use "../foundation/variable" as *;
+
+.p-class-top {
+  @include mq() {
+    &:not(.--hari) {
+      display: grid;
+      grid-template-columns: 1fr minmax(470px, 60%);
+      column-gap: 6%;
+
+      .p-class-top__head {
+        min-height: 140px;
+      }
+    }
+  }
+
+  &.l-inner {
+    padding: 2rem 12vw;
+
+    @include mq() {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__head {
+    border: 4px solid #FFF;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @include mq() {
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    .--hari & {
+      margin-bottom: 2rem;
+      max-width: 818px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+
+      @include mq() {
+        font-size: 1.625rem;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin: 0.25rem 0;
+    }
+  }
+
+  &__inner {
+    @include mq() {
+      position: absolute;
+      @include center(xy);
+    }
+  }
+
+  &__list {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.75rem;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left: 0;
+
+    @include mq() {
+      width: 100%;
+      font-size: 0.875rem;
+    }
+  }
+
+  &--text {
+    font-size: 0.875rem;
+    letter-spacing: 0.7px;
+    line-height: 1.75;
+
+    @include mq() {
+      line-height: 2;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+// menu
+.p-class-menu-kids-intro {
+  margin-bottom: 4rem;
+
+  &__headline {
+    font-size: 12px;
+    margin-bottom: 2rem;
+    @include height(12, 22);
+  }
+
+  &__top-fig {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+
+  &__grayBox {
+    max-width: 700px;
+
+    @include mq() {
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      padding: 0;
+
+      div {
+        padding: 1rem 1.5rem;
+
+        .c-headline {
+          text-align: left;
+        }
+      }
+    }
+
+    figure {
+      width: 250px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0;
+
+      @include mq() {
+        img {
+          width: 250px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.p-class-menu {
+  @include mq() {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: min(3vw, 60px);
+  }
+
+  &__wrap {
+    margin-bottom: 4rem;
+  }
+
+  &__fig {
+    position: relative;
+  }
+
+  &__figc {
+    line-height: 56px;
+    font-weight: 700;
+    font-size: 1.125rem;
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    line-height: 1.8;
+
+    @include mq() {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__cat {
+    position: absolute;
+    top: -14px;
+    left: 7px;
+    display: block;
+    background-color: #3DB95B;
+    line-height: 28px;
+    padding: 0 0.5rem;
+
+    @include mq() {
+      left: 0;
+    }
+
+    &--text {
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      font-size: 0.875rem;
+      position: relative;
+    }
+
+    &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: -28px;
+      top: 0;
+      border-top: 14px solid #3DB95B;
+      border-right: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 14px solid #3DB95B;
+    }
+  }
+
+  &__schedule-head {
+    margin-top: 1rem;
+    background: $gray;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+  }
+
+  &__schedule {
+    padding: 1rem;
+    font-size: 0.625rem;
+    line-height: 2;
+
+    @include mq() {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: repeat(2, auto);
+      grid-auto-flow: column;
+
+      &.--third {
+        grid-template-rows: repeat(3, auto);
+      }
+    }
+  }
+}
+
+
+// PRICE
+.p-class-price {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include mq() {
+    // display: flex;
+    // justify-content: space-between;
+    // position: relative;
+    // margin-bottom: 2rem;
+  }
+
+  .l-inner-box {
+    margin-bottom: 1rem;
+
+    @include mq() {
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-right: min(48px, 3vw);
+      }
+
+      &:last-child {
+        margin-left: min(48px, 3vw);
+      }
+    }
+  }
+
+  &--title {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 700;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1.2px;
+
+    .page-adult & {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: none;
+
+      span {
+        font-weight: normal;
+      }
+    }
+
+    span {
+      font-size: 0.875rem;
+      display: block;
+      color: inherit;
+      color: $text-color;
+    }
+  }
+
+  &__menu {
+    color: #3ca198;
+    font-weight: 700;
+    /* menu design */
+    width: 100%;
+    font-size: 1.125rem;
+    letter-spacing: .9px;
+
+    @include mq() {
+      font-size: 1.5rem;
+      letter-spacing: 1.2px;
+    }
+
+    div {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+      padding: 5px 0;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        width: 100%;
+        border-bottom: dotted 1px #3ca198;
+      }
+    }
+
+    dt {
+      margin: 0;
+      padding: 0 5px 0 0;
+      background-color: $pale-yellow;
+      z-index: 2;
+      text-align: left;
+    }
+
+    dd {
+      margin: 0;
+      padding: 0 0 0 5px;
+      background-color: $pale-yellow;
+      z-index: 2;
+      text-align: right;
+    }
+  }
+
+  &__footer {
+    font-size: clamp(16px, 4vw, 20px);
+    letter-spacing: 1px;
+
+    @media screen and (max-width: 375px) {
+      letter-spacing: 0;
+    }
+
+    @include height(20, 32);
+    padding: 1rem 0;
+    max-width: 800px;
+    font-weight: 700;
+  }
+}
+
+
+.p-class-price {
+
+  .page-kids &,
+  .page-about {
+    max-width: 800px;
+    margin: auto;
+
+    @include mq() {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 2rem;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: #000;
+        position: absolute;
+        @include center(x);
+        top: 0;
+      }
+    }
+  }
+
+  .p-about-price & {
+    padding: 1.5rem;
+
+    @include mq() {
+      padding: min(1vw, 24px);
+    }
+  }
+
+  .page-adult & {
+    @include mq() {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    p {
+      color: #3CA198;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.8px;
+    }
+
+    .bg-white {
+      padding: 0.5rem 0.75rem;
+    }
+
+    &__menu {
+      font-size: 0.875rem;
+      letter-spacing: 0;
+      margin-bottom: 2.5rem;
+
+      dt {
+        white-space: nowrap;
+      }
+
+      span {
+        color: inherit;
+      }
+    }
+  }
+
+  .stretch-box {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &:after {
+      content: "";
+      width: 27px;
+      height: 14px;
+      display: inline-block;
+      position: absolute;
+      bottom: -36px;
+      @include center(x);
+      border-top: 14px solid #3CA198;
+      border-right: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 14px solid transparent;
+    }
+  }
+
+  .stretch {
+    font-size: .75rem;
+    justify-content: space-between;
+
+
+    &:first-child {
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid $pale-green;
+    }
+
+    P {
+      font-size: .75rem;
+    }
+  }
+}
+
+.non-member-price {
+  text-align: left;
+
+  >div:first-child {
+    border-bottom: 1px solid $pale-green;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.25em;
+  }
+
+  span {
+    font-size: .875em;
+  }
+}
+
+// time-table
+.p-class-timetable__fig {
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 800px) {
+    overflow-x: scroll;
+
+    img {
+      max-width: 800px;
+    }
+  }
+}
+
+.p-class-timetable__figc {
+  border-radius: 8px;
+  background: $pink;
+  color: #fff;
+  width: 100%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.p-class-voice {
+
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #3CA198;
+  }
+
+  dt {
+    font-weight: 700;
+    font-size: 1rem;
+
+    @include mq() {
+      font-size: 1.25rem;
+    }
+  }
+
+  dd {
+    color: $text-color;
+    font-size: 0.75rem;
+    line-height: 1.75;
+
+    @include mq() {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+// adult
+.p-class-adult-top {
+  margin-top: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq() {
+    .l-inner-box {
+      display: grid;
+      grid-template-columns: 1fr 250px;
+      padding: 0;
+    }
+  }
+
+  &__head {
+    @include mq() {
+      padding: 1.5rem;
+
+      >* {
+        text-align: left;
+      }
+    }
+  }
+
+  &__headline {
+    margin-bottom: 2rem;
+
+    @include mq() {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 0.75rem;
+
+    @include mq() {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__fig {
+    width: 80%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq() {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+.page-adult .p-class-price .l-inner-box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include mq() {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+.p-class-hari {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  @include mq() {
+    display: grid;
+    grid-template-columns: 60% calc(40% - 2rem);
+    column-gap: 2rem;
+  }
+
+  &--text {
+    margin-bottom: 2rem;
+
+    @include mq() {
+      margin-bottom: 0;
+    }
+  }
+
+  &--fig {
+    column-gap: 1rem;
+  }
+
+}

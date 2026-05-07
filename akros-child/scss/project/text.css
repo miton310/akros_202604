@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/*======================================
+  || color
+======================================*/
+/* ==============================
+  || 設定
+============================== */
+:root {
+  --ark-width--container: 1000px;
+}
+
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
+.p-text-bold-20 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3CA198;
+}
+@media screen and (min-width: 850px) {
+  .p-text-bold-20 {
+    font-size: 1.25rem;
+  }
+}
+
+.p-color-paleGreen {
+  color: #3CA198;
+}
+
+.p-color-lightGreen {
+  color: #3DB95B;
+}
+
+.p-text {
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+  letter-spacing: 0.7px;
+}
+@media screen and (min-width: 850px) {
+  .p-text {
+    font-size: 1.125rem;
+    letter-spacing: 0;
+    line-height: 2.1111111111;
+  }
+}
+
+.p-text-small {
+  font-size: 0.75rem;
+  line-height: 1.8333333333;
+}
+
+.p-text-pageTop {
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
+
+.p-text-pageCaution {
+  font-size: 0.875rem;
+  line-height: 1.7142857143;
+}
+
+.p-text-14 {
+  font-size: 0.875rem;
+  line-height: 1.8571428571;
+}
+/*# sourceMappingURL=text.css.map */

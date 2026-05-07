@@ -1,0 +1,25 @@
+.vscode
+node_modules
+webp
+*.old
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor/IDE
+.idea/
+*.swp
+*.swo

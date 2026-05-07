@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*======================================
+  || color
+======================================*/
+/* ==============================
+  || 設定
+============================== */
+:root {
+  --ark-width--container: 1000px;
+}
+
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
+.c-post__list {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  padding: 0 0.5rem;
+}
+@media screen and (min-width: 850px) {
+  .c-post__list {
+    font-size: 1rem;
+    letter-spacing: 1.6px;
+  }
+}
+.c-post__date {
+  display: flex;
+}
+.c-post__item {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  padding: 0.5rem 0;
+}
+.c-post__item:not(:last-child) {
+  border-bottom: 1px solid #3DB95B;
+}
+@media screen and (min-width: 850px) {
+  .c-post__item {
+    display: flex;
+  }
+}
+.c-post__item a {
+  text-decoration: none;
+}
+.c-post__item a:hover {
+  color: #3db95b;
+}
+
+.type-post,
+.p-archive {
+  margin-top: 4rem;
+}
+/*# sourceMappingURL=post.css.map */

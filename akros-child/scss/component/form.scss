@@ -1,0 +1,22 @@
+@use '../foundation/variable' as *;
+
+form {
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+
+  label {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+// 予約システム
+.c-booking-package__wrap {
+  margin-bottom: 2rem;
+}

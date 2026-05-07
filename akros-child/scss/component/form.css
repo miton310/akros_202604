@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*======================================
+  || color
+======================================*/
+/* ==============================
+  || 設定
+============================== */
+:root {
+  --ark-width--container: 1000px;
+}
+
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
+form {
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form label {
+  display: block;
+  margin-bottom: 2rem;
+}
+form input,
+form textarea {
+  width: 100%;
+}
+
+.c-booking-package__wrap {
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*======================================
+  || color
+======================================*/
+/* ==============================
+  || 設定
+============================== */
+:root {
+  --ark-width--container: 1000px;
+}
+
+/* ==============================
+  || breakpoints
+============================== */
+/* ==============================
+  中央寄せ
+============================== */
+@media screen and (min-width: 850px) {
+  .p-instructor {
+    display: grid;
+    grid-template-columns: repeat(3, calc(33.333% - min(50px, 4vw) / 1.5));
+    -moz-column-gap: min(50px, 4vw);
+         column-gap: min(50px, 4vw);
+  }
+  .p-instructor .l-container--wide {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.p-instructor__figure {
+  padding: 2.5rem 10vw 0 10vw;
+}
+@media screen and (min-width: 850px) {
+  .p-instructor__figure {
+    padding-top: 0;
+  }
+}
+.p-instructor__content {
+  padding: 0 10vw 0 10vw;
+}
+@media screen and (min-width: 850px) {
+  .p-instructor__content {
+    padding: 0;
+  }
+  .p-instructor__content .l-container--wide {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.p-instructor__head {
+  padding: 2rem 1rem;
+  margin-bottom: 1.25rem;
+}
+@media screen and (min-width: 850px) {
+  .p-instructor__head {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.p-instructor__name {
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: 500;
+  border-bottom: 1px solid #FFF;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.p-instructor__name span {
+  font-size: 0.875rem;
+  display: block;
+  font-weight: normal;
+  letter-spacing: 0.7px;
+}
+.p-instructor__list {
+  padding-left: 0;
+  font-size: 0.75rem;
+}
+.p-instructor__list.--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+}
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  .p-instructor__list.--grid {
+    display: block;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1024px) {
+  .p-instructor__list {
+    display: block;
+  }
+}
+.p-instructor__footer {
+  margin-bottom: 5rem;
+}
+.p-instructor__footer > * {
+  font-size: 0.75rem;
+  line-height: 1.8333333333;
+}
+.p-instructor__footer-list {
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+}
+.p-instructor__footer-list li {
+  margin-bottom: 0.25rem;
+}
+/*# sourceMappingURL=instructor.css.map */

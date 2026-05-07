@@ -1,0 +1,22 @@
+@use '../foundation/variable' as *;
+
+.c-drawerNav {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.c-drawerNav .menu-item {
+  border-bottom: none;
+}
+
+.c-drawerNav__a {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  letter-spacing: .7px;
+
+  &:before {
+    content: "■";
+    display: inline-block;
+    padding-right: 0.25rem;
+  }
+}
